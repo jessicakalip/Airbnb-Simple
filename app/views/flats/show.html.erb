@@ -1,0 +1,51 @@
+<div id="banner"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="header">
+        <h1><%= @flat.name %></h1>
+        <h3><%= @flat.address %></h3>
+      </div>
+      <div class="information">
+        <h3>A bit more about this flat...</h3>
+        <p><%= @flat.description %></p>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="booking">
+        <h2>Book this place!</h2>
+        <form action="">
+          <div>
+            <label for="from">From:</label>
+            <input type="date" id="from">
+          </div>
+          <div>
+            <label for="from">To:</label>
+            <input type="date" id="from">
+          </div>
+          <div>
+            <input type="submit" value="Book" class="btn btn-success">
+          </div>
+        </form>
+      </div>
+      <div class="details">
+        <h2>Details</h2>
+        <div class="row justify-content-start">
+          <div class="col-2">
+            <p><i class="fas fa-user-friends"></i>   <%= @flat.number_of_guests %></p>
+          </div>
+          <div class="col-2">
+            <p><i class="fas fa-euro-sign"></i>   <%= @flat.price_per_night %></p>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+      <h2>Share</h2>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-pinterest-square"></i>
+        <i class="fas fa-envelope-square"></i>
+      </div>
+    </div>
+  </div>
+</div>
